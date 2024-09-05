@@ -5,7 +5,7 @@ _CN.name = ''
 _CN.suffix =''
 _CN.gamma = 0.85
 _CN.max_flow = 400
-_CN.batch_size = 24
+_CN.batch_size = 1
 _CN.sum_freq = 100
 _CN.val_freq = 5000000
 _CN.image_size = [368, 496]
@@ -58,6 +58,12 @@ _CN.percostformer3.no_border = True
 _CN.percostformer3.gt_r = 15
 _CN.percostformer3.fix_pe = False
 _CN.percostformer3.r_16 = -1
+_CN.percostformer3.sam_checkpoint = None
+_CN.percostformer3.freeze_bn = False
+_CN.percostformer3.ft_ver = False
+_CN.percostformer3.sam_scale = 'H'
+_CN.percostformer3.weighted_add = False
+
 # decoder
 _CN.percostformer3.decoder_depth = 12
 _CN.percostformer3.critical_params = ['vert_c_dim', 'encoder_depth', 'vertical_encoder_attn', "use_patch", "flow_or_pe", "use_rpe", "dropout", "detach_local", "expand_factor"]
